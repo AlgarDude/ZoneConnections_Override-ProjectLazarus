@@ -1,0 +1,786 @@
+# Project Lazarus specific overrides for MQ2EasyFind
+# Authors: Algar(github.com/AlgarDude) and various unidentified contributors
+# Version: 20250712 (Initial Public Release)
+# License: Apache 2.0
+# This file was original released as a resource on redguides.com!
+FindLocations:
+    bazaar:
+        -   type: ZoneConnection
+            location: [-885, 195, 0]
+            targetZone: nexus
+        -   type: ZoneConnection
+            location: [-885, -215, 12.5]
+            targetZone: shadowhaven
+            script: |
+                mq.cmd('/face fast heading 180')
+                mq.delay(100)
+                mq.cmd('/keypress forward hold')
+                mq.delay(1000)
+                mq.cmd('/keypress forward')
+        -   type: Translocator
+            name: Celli
+            destinations:
+                -   keyword: Plane of Knowledge
+                    targetZone: poknowledge
+                -   keyword: Temple of Marr
+                    targetZone: freeporttemple
+    freeporttemple:
+        -   type: Translocator
+            name: Klonopin
+            destinations:
+                -   keyword: codecay
+                    targetZone: codecay
+                -   keyword: pofire
+                    targetZone: pofire
+                -   keyword: poinnovation
+                    targetZone: poinnovation
+                -   keyword: abysmal
+                    targetZone: abysmal
+                -   keyword: acrylia
+                    targetZone: acrylia
+                -   keyword: barindu
+                    targetZone: barindu
+                -   keyword: befallen
+                    targetZone: befallen
+                -   keyword: blackburrow
+                    targetZone: blackburrow
+                -   keyword: bothunder
+                    targetZone: bothunder
+                -   keyword: burningwood
+                    targetZone: burningwood
+                -   keyword: cazicthule
+                    targetZone: cazicthule
+                -   keyword: charasis
+                    targetZone: charasis
+                -   keyword: chardok
+                    targetZone: chardok
+                -   keyword: citymist
+                    targetZone: citymist
+                -   keyword: cobaltscar
+                    targetZone: cobaltscar
+                -   keyword: crushbone
+                    targetZone: crushbone
+                -   keyword: crystal
+                    targetZone: crystal
+                -   keyword: dalnir
+                    targetZone: dalnir
+                -   keyword: dawnshroud
+                    targetZone: dawnshroud
+                -   keyword: dranik
+                    targetZone: dranik
+                -   keyword: dreadlands
+                    targetZone: dreadlands
+                -   keyword: dulak
+                    targetZone: dulak
+                -   keyword: echo
+                    targetZone: echo
+                -   keyword: emeraldjungle
+                    targetZone: emeraldjungle
+                -   keyword: erudnext
+                    targetZone: erudnext
+                -   keyword: ferubi
+                    targetZone: ferubi
+                -   keyword: freeporttemple
+                    targetZone: freeporttemple
+                -   keyword: frozenshadow
+                    targetZone: frozenshadow
+                -   keyword: fungusgrove
+                    targetZone: fungusgrove
+                -   keyword: grimling
+                    targetZone: grimling
+                -   keyword: growthplane
+                    targetZone: growthplane
+                -   keyword: gukbottom
+                    targetZone: gukbottom
+                -   keyword: guktop
+                    targetZone: guktop
+                -   keyword: gunthak
+                    targetZone: gunthak
+                -   keyword: highkeep
+                    targetZone: highkeep
+                -   keyword: hohonora
+                    targetZone: hohonora
+                -   keyword: hole
+                    targetZone: hole
+                -   keyword: iceclad
+                    targetZone: iceclad
+                -   keyword: jaggedpine
+                    targetZone: jaggedpine
+                -   keyword: kael
+                    targetZone: kael
+                -   keyword: kaesora
+                    targetZone: kaesora
+                -   keyword: karnor
+                    targetZone: karnor
+                -   keyword: kurn
+                    targetZone: kurn
+                -   keyword: lakeofillomen
+                    targetZone: lakeofillomen
+                -   keyword: lavastorm
+                    targetZone: lavastorm
+                -   keyword: maiden
+                    targetZone: maiden
+                -   keyword: mischiefplane
+                    targetZone: mischiefplane
+                -   keyword: mistmoore
+                    targetZone: mistmoore
+                -   keyword: nadox
+                    targetZone: nadox
+                -   keyword: najena
+                    targetZone: najena
+                -   keyword: natimbi
+                    targetZone: natimbi
+                -   keyword: necropolis
+                    targetZone: necropolis
+                -   keyword: northkarana
+                    targetZone: northkarana
+                -   keyword: nurga
+                    targetZone: nurga
+                -   keyword: oot
+                    targetZone: oot
+                -   keyword: paludal
+                    targetZone: paludal
+                -   keyword: paw
+                    targetZone: paw
+                -   keyword: permaforst
+                    targetZone: permaforst
+                -   keyword: poair
+                    targetZone: poair
+                -   keyword: podisease
+                    targetZone: podisease
+                -   keyword: poeartha
+                    targetZone: poeartha
+                -   keyword: poearthb
+                    targetZone: poearthb
+                -   keyword: pojustice
+                    targetZone: pojustice
+                -   keyword: poknowledge
+                    targetZone: poknowledge
+                -   keyword: ponightmare
+                    targetZone: ponightmare
+                -   keyword: postorms
+                    targetZone: postorms
+                -   keyword: potactics
+                    targetZone: potactics
+                -   keyword: povalor
+                    targetZone: povalor
+                -   keyword: powater
+                    targetZone: powater
+                -   keyword: qeytoqrg
+                    targetZone: qeytoqrg
+                -   keyword: qinimi
+                    targetZone: qinimi
+                -   keyword: qrg
+                    targetZone: qrg
+                -   keyword: riwwi
+                    targetZone: riwwi
+                -   keyword: runnyeye
+                    targetZone: runnyeye
+                -   keyword: scarlet
+                    targetZone: scarlet
+                -   keyword: sebilis
+                    targetZone: sebilis
+                -   keyword: shadowhaven
+                    targetZone: shadowhaven
+                -   keyword: sharvahl
+                    targetZone: sharvahl
+                -   keyword: skyfire
+                    targetZone: skyfire
+                -   keyword: skyshrine
+                    targetZone: skyshrine
+                -   keyword: soldunga
+                    targetZone: soldunga
+                -   keyword: soldungb
+                    targetZone: soldungb
+                -   keyword: soldungc
+                    targetZone: soldungc
+                -   keyword: solrotower
+                    targetZone: solrotower
+                -   keyword: ssratemple
+                    targetZone: ssratemple
+                -   keyword: stonebrunt
+                    targetZone: stonebrunt
+                -   keyword: thegrey
+                    targetZone: thegrey
+                -   keyword: thurgadina
+                    targetZone: thurgadina
+                -   keyword: timorous
+                    targetZone: timorous
+                -   keyword: trakanon
+                    targetZone: trakanon
+                -   keyword: twilight
+                    targetZone: twilight
+                -   keyword: umbral
+                    targetZone: umbral
+                -   keyword: unrest
+                    targetZone: unrest
+                -   keyword: veksar
+                    targetZone: veksar
+                -   keyword: velketor
+                    targetZone: velketor
+                -   keyword: vexthal
+                    targetZone: vexthal
+                -   keyword: wakening
+                    targetZone: wakening
+                -   keyword: wallofslaughter
+                    targetZone: wallofslaughter
+                -   keyword: warrens
+                    targetZone: warrens
+                -   keyword: warslikswood
+                    targetZone: warslikswood
+                -   keyword: westwastes
+                    targetZone: westwastes
+    natimbi:
+        -   type: ZoneConnection
+            location: [1147.82, 1537.48, 531.95]
+            targetZone: kodtaz
+            switch: 1
+    nexus:
+        -   type: Translocator
+            name: Valium
+            destinations:
+                -   keyword: codecay
+                    targetZone: codecay
+                -   keyword: pofire
+                    targetZone: pofire
+                -   keyword: poinnovation
+                    targetZone: poinnovation
+                -   keyword: abysmal
+                    targetZone: abysmal
+                -   keyword: acrylia
+                    targetZone: acrylia
+                -   keyword: barindu
+                    targetZone: barindu
+                -   keyword: befallen
+                    targetZone: befallen
+                -   keyword: blackburrow
+                    targetZone: blackburrow
+                -   keyword: bothunder
+                    targetZone: bothunder
+                -   keyword: burningwood
+                    targetZone: burningwood
+                -   keyword: cazicthule
+                    targetZone: cazicthule
+                -   keyword: charasis
+                    targetZone: charasis
+                -   keyword: chardok
+                    targetZone: chardok
+                -   keyword: citymist
+                    targetZone: citymist
+                -   keyword: cobaltscar
+                    targetZone: cobaltscar
+                -   keyword: crushbone
+                    targetZone: crushbone
+                -   keyword: crystal
+                    targetZone: crystal
+                -   keyword: dalnir
+                    targetZone: dalnir
+                -   keyword: dawnshroud
+                    targetZone: dawnshroud
+                -   keyword: dranik
+                    targetZone: dranik
+                -   keyword: dreadlands
+                    targetZone: dreadlands
+                -   keyword: dulak
+                    targetZone: dulak
+                -   keyword: echo
+                    targetZone: echo
+                -   keyword: emeraldjungle
+                    targetZone: emeraldjungle
+                -   keyword: erudnext
+                    targetZone: erudnext
+                -   keyword: ferubi
+                    targetZone: ferubi
+                -   keyword: freeporttemple
+                    targetZone: freeporttemple
+                -   keyword: frozenshadow
+                    targetZone: frozenshadow
+                -   keyword: fungusgrove
+                    targetZone: fungusgrove
+                -   keyword: grimling
+                    targetZone: grimling
+                -   keyword: growthplane
+                    targetZone: growthplane
+                -   keyword: gukbottom
+                    targetZone: gukbottom
+                -   keyword: guktop
+                    targetZone: guktop
+                -   keyword: gunthak
+                    targetZone: gunthak
+                -   keyword: highkeep
+                    targetZone: highkeep
+                -   keyword: hohonora
+                    targetZone: hohonora
+                -   keyword: hole
+                    targetZone: hole
+                -   keyword: iceclad
+                    targetZone: iceclad
+                -   keyword: jaggedpine
+                    targetZone: jaggedpine
+                -   keyword: kael
+                    targetZone: kael
+                -   keyword: kaesora
+                    targetZone: kaesora
+                -   keyword: karnor
+                    targetZone: karnor
+                -   keyword: kurn
+                    targetZone: kurn
+                -   keyword: lakeofillomen
+                    targetZone: lakeofillomen
+                -   keyword: lavastorm
+                    targetZone: lavastorm
+                -   keyword: maiden
+                    targetZone: maiden
+                -   keyword: mischiefplane
+                    targetZone: mischiefplane
+                -   keyword: mistmoore
+                    targetZone: mistmoore
+                -   keyword: nadox
+                    targetZone: nadox
+                -   keyword: najena
+                    targetZone: najena
+                -   keyword: natimbi
+                    targetZone: natimbi
+                -   keyword: necropolis
+                    targetZone: necropolis
+                -   keyword: northkarana
+                    targetZone: northkarana
+                -   keyword: nurga
+                    targetZone: nurga
+                -   keyword: oot
+                    targetZone: oot
+                -   keyword: paludal
+                    targetZone: paludal
+                -   keyword: paw
+                    targetZone: paw
+                -   keyword: permaforst
+                    targetZone: permaforst
+                -   keyword: poair
+                    targetZone: poair
+                -   keyword: podisease
+                    targetZone: podisease
+                -   keyword: poeartha
+                    targetZone: poeartha
+                -   keyword: poearthb
+                    targetZone: poearthb
+                -   keyword: pojustice
+                    targetZone: pojustice
+                -   keyword: poknowledge
+                    targetZone: poknowledge
+                -   keyword: ponightmare
+                    targetZone: ponightmare
+                -   keyword: postorms
+                    targetZone: postorms
+                -   keyword: potactics
+                    targetZone: potactics
+                -   keyword: povalor
+                    targetZone: povalor
+                -   keyword: powater
+                    targetZone: powater
+                -   keyword: qeytoqrg
+                    targetZone: qeytoqrg
+                -   keyword: qinimi
+                    targetZone: qinimi
+                -   keyword: qrg
+                    targetZone: qrg
+                -   keyword: riwwi
+                    targetZone: riwwi
+                -   keyword: runnyeye
+                    targetZone: runnyeye
+                -   keyword: scarlet
+                    targetZone: scarlet
+                -   keyword: sebilis
+                    targetZone: sebilis
+                -   keyword: shadowhaven
+                    targetZone: shadowhaven
+                -   keyword: sharvahl
+                    targetZone: sharvahl
+                -   keyword: skyfire
+                    targetZone: skyfire
+                -   keyword: skyshrine
+                    targetZone: skyshrine
+                -   keyword: soldunga
+                    targetZone: soldunga
+                -   keyword: soldungb
+                    targetZone: soldungb
+                -   keyword: soldungc
+                    targetZone: soldungc
+                -   keyword: solrotower
+                    targetZone: solrotower
+                -   keyword: ssratemple
+                    targetZone: ssratemple
+                -   keyword: stonebrunt
+                    targetZone: stonebrunt
+                -   keyword: thegrey
+                    targetZone: thegrey
+                -   keyword: thurgadina
+                    targetZone: thurgadina
+                -   keyword: timorous
+                    targetZone: timorous
+                -   keyword: trakanon
+                    targetZone: trakanon
+                -   keyword: twilight
+                    targetZone: twilight
+                -   keyword: umbral
+                    targetZone: umbral
+                -   keyword: unrest
+                    targetZone: unrest
+                -   keyword: veksar
+                    targetZone: veksar
+                -   keyword: velketor
+                    targetZone: velketor
+                -   keyword: vexthal
+                    targetZone: vexthal
+                -   keyword: wakening
+                    targetZone: wakening
+                -   keyword: wallofslaughter
+                    targetZone: wallofslaughter
+                -   keyword: warrens
+                    targetZone: warrens
+                -   keyword: warslikswood
+                    targetZone: warslikswood
+                -   keyword: westwastes
+                    targetZone: westwastes
+        -   type: ZoneConnection
+            location: [-410, -90, -60]
+            targetZone: bazaar
+        #Choose whether you prefer to use this stone or valium. Stone puts you next to PoK > Nexus stone, Valium puts you next to PoK > PoT stone. Uncomment this to use the stone.
+        #-   type: ZoneConnection
+        #    switch: POKTELE500
+        #    targetZone: poknowledge
+    poeartha:
+        -   type: ZoneConnection
+            location: [142, -1167, 71]
+            targetZone: poearthb
+            identifier: 3
+        -   type: ZoneConnection
+            location: [254.91, -1167, 71]
+            targetZone: potranquility
+            switch: 12
+    poknowledge:
+        -   type: Translocator
+            name: Valium
+            destinations:
+                -   keyword: codecay
+                    targetZone: codecay
+                -   keyword: pofire
+                    targetZone: pofire
+                -   keyword: poinnovation
+                    targetZone: poinnovation
+                -   keyword: abysmal
+                    targetZone: abysmal
+                -   keyword: acrylia
+                    targetZone: acrylia
+                -   keyword: barindu
+                    targetZone: barindu
+                -   keyword: befallen
+                    targetZone: befallen
+                -   keyword: blackburrow
+                    targetZone: blackburrow
+                -   keyword: bothunder
+                    targetZone: bothunder
+                -   keyword: burningwood
+                    targetZone: burningwood
+                -   keyword: cazicthule
+                    targetZone: cazicthule
+                -   keyword: charasis
+                    targetZone: charasis
+                -   keyword: chardok
+                    targetZone: chardok
+                -   keyword: citymist
+                    targetZone: citymist
+                -   keyword: cobaltscar
+                    targetZone: cobaltscar
+                -   keyword: crushbone
+                    targetZone: crushbone
+                -   keyword: crystal
+                    targetZone: crystal
+                -   keyword: dalnir
+                    targetZone: dalnir
+                -   keyword: dawnshroud
+                    targetZone: dawnshroud
+                -   keyword: dranik
+                    targetZone: dranik
+                -   keyword: dreadlands
+                    targetZone: dreadlands
+                -   keyword: dulak
+                    targetZone: dulak
+                -   keyword: echo
+                    targetZone: echo
+                -   keyword: emeraldjungle
+                    targetZone: emeraldjungle
+                -   keyword: erudnext
+                    targetZone: erudnext
+                -   keyword: ferubi
+                    targetZone: ferubi
+                -   keyword: freeporttemple
+                    targetZone: freeporttemple
+                -   keyword: frozenshadow
+                    targetZone: frozenshadow
+                -   keyword: fungusgrove
+                    targetZone: fungusgrove
+                -   keyword: grimling
+                    targetZone: grimling
+                -   keyword: growthplane
+                    targetZone: growthplane
+                -   keyword: gukbottom
+                    targetZone: gukbottom
+                -   keyword: guktop
+                    targetZone: guktop
+                -   keyword: gunthak
+                    targetZone: gunthak
+                -   keyword: highkeep
+                    targetZone: highkeep
+                -   keyword: hohonora
+                    targetZone: hohonora
+                -   keyword: hole
+                    targetZone: hole
+                -   keyword: iceclad
+                    targetZone: iceclad
+                -   keyword: jaggedpine
+                    targetZone: jaggedpine
+                -   keyword: kael
+                    targetZone: kael
+                -   keyword: kaesora
+                    targetZone: kaesora
+                -   keyword: karnor
+                    targetZone: karnor
+                -   keyword: kurn
+                    targetZone: kurn
+                -   keyword: lakeofillomen
+                    targetZone: lakeofillomen
+                -   keyword: lavastorm
+                    targetZone: lavastorm
+                -   keyword: maiden
+                    targetZone: maiden
+                -   keyword: mischiefplane
+                    targetZone: mischiefplane
+                -   keyword: mistmoore
+                    targetZone: mistmoore
+                -   keyword: nadox
+                    targetZone: nadox
+                -   keyword: najena
+                    targetZone: najena
+                -   keyword: natimbi
+                    targetZone: natimbi
+                -   keyword: necropolis
+                    targetZone: necropolis
+                -   keyword: northkarana
+                    targetZone: northkarana
+                -   keyword: nurga
+                    targetZone: nurga
+                -   keyword: oot
+                    targetZone: oot
+                -   keyword: paludal
+                    targetZone: paludal
+                -   keyword: paw
+                    targetZone: paw
+                -   keyword: permaforst
+                    targetZone: permaforst
+                -   keyword: poair
+                    targetZone: poair
+                -   keyword: podisease
+                    targetZone: podisease
+                -   keyword: poeartha
+                    targetZone: poeartha
+                -   keyword: poearthb
+                    targetZone: poearthb
+                -   keyword: pojustice
+                    targetZone: pojustice
+                -   keyword: ponightmare
+                    targetZone: ponightmare
+                -   keyword: postorms
+                    targetZone: postorms
+                -   keyword: potactics
+                    targetZone: potactics
+                -   keyword: povalor
+                    targetZone: povalor
+                -   keyword: powater
+                    targetZone: powater
+                -   keyword: qeytoqrg
+                    targetZone: qeytoqrg
+                -   keyword: qinimi
+                    targetZone: qinimi
+                -   keyword: qrg
+                    targetZone: qrg
+                -   keyword: riwwi
+                    targetZone: riwwi
+                -   keyword: runnyeye
+                    targetZone: runnyeye
+                -   keyword: scarlet
+                    targetZone: scarlet
+                -   keyword: sebilis
+                    targetZone: sebilis
+                -   keyword: shadowhaven
+                    targetZone: shadowhaven
+                -   keyword: sharvahl
+                    targetZone: sharvahl
+                -   keyword: skyfire
+                    targetZone: skyfire
+                -   keyword: skyshrine
+                    targetZone: skyshrine
+                -   keyword: soldunga
+                    targetZone: soldunga
+                -   keyword: soldungb
+                    targetZone: soldungb
+                -   keyword: soldungc
+                    targetZone: soldungc
+                -   keyword: solrotower
+                    targetZone: solrotower
+                -   keyword: ssratemple
+                    targetZone: ssratemple
+                -   keyword: stonebrunt
+                    targetZone: stonebrunt
+                -   keyword: thegrey
+                    targetZone: thegrey
+                -   keyword: thurgadina
+                    targetZone: thurgadina
+                -   keyword: timorous
+                    targetZone: timorous
+                -   keyword: trakanon
+                    targetZone: trakanon
+                -   keyword: twilight
+                    targetZone: twilight
+                -   keyword: umbral
+                    targetZone: umbral
+                -   keyword: unrest
+                    targetZone: unrest
+                -   keyword: veksar
+                    targetZone: veksar
+                -   keyword: velketor
+                    targetZone: velketor
+                -   keyword: vexthal
+                    targetZone: vexthal
+                -   keyword: wakening
+                    targetZone: wakening
+                -   keyword: wallofslaughter
+                    targetZone: wallofslaughter
+                -   keyword: warrens
+                    targetZone: warrens
+                -   keyword: warslikswood
+                    targetZone: warslikswood
+                -   keyword: westwastes
+                    targetZone: westwastes
+        -   type: ZoneConnection
+            switch: 23
+            targetZone: overthere
+        -   type: ZoneConnection
+            switch: 34
+            targetZone: everfrost
+            replace: false
+        -   type: ZoneConnection
+            switch: 138
+            targetZone: guildlobby
+        -   type: ZoneConnection
+            targetZone: feerrott
+            name: 'The Feerrott'
+            switch: POKOGPORT500
+        -   type: ZoneConnection
+            switch: POKCABPORT500
+            targetZone: fieldofbone
+            replace: false
+        -   type: ZoneConnection
+            switch: 26
+            targetZone: firiona
+            replace: false
+        -   type: ZoneConnection
+            switch: 30
+            targetZone: greatdivide
+        -   type: ZoneConnection
+            switch: POKFELPORT500
+            targetZone: gfaydark
+            identifier: 1
+            replace: false
+        -   type: ZoneConnection
+            switch: 36
+            targetZone: gfaydark
+            identifier: 2
+            replace: false
+        -   type: ZoneConnection
+            switch: 19
+            targetZone: innothuleb
+            replace: false
+        -   type: ZoneConnection
+            switch: OBJ_PORT_CRESCENT
+            targetZone: moors
+            replace: false
+            expansion: Serpent's Spine
+        -   type: ZoneConnection
+            switch: 20
+            targetZone: nektulos
+            replace: false
+        -   type: ZoneConnection
+            switch: 31
+            targetZone: nexus
+        -   type: ZoneConnection
+            switch: 27
+            targetZone: potranquility
+            replace: false
+        -   type: ZoneConnection
+            switch: OBJ_PORT_GUKTA
+            targetZone: rathemtn
+            replace: false
+            expansion: Legacy of Ykesha
+        -   type: ZoneConnection
+            switch: 24
+            targetZone: steamfontmts
+            replace: false
+        -   type: ZoneConnection
+            switch: 32
+            targetZone: toxxulia
+            identifier: 1
+            replace: false
+        -   type: ZoneConnection
+            switch: 22
+            targetZone: toxxulia
+            identifier: 2
+            replace: false
+        -   type: Translocator
+            name: Priest of Discord
+            keyword: wish to go to Discord
+            targetZone: draniksscar
+            expansion: Omens of War
+        -   type: ZoneConnection
+            switch: 150
+            targetZone: arena
+            replace: false
+        -   type: ZoneConnection
+            switch: 25
+            targetZone: freeportwest
+        -   type: ZoneConnection
+            switch: 28
+            targetZone: qeynos2
+        -   type: ZoneConnection
+            switch: 29
+            targetZone: shadeweaver
+        -   type: ZoneConnection
+            switch: 35
+            targetZone: butcher
+        -   type: ZoneConnection
+            switch: 37
+            targetZone: mistythicket
+        -   type: ZoneConnection
+            switch: 139
+            targetZone: bazaar
+        -   type: ZoneConnection
+            switch: 137
+            targetZone: gunthak
+        -   type: ZoneConnection
+            targetZone: airplane
+            remove: true
+        -   type: Translocator
+            name: Magus Alaria
+            destinations:
+                -   keyword: Butcherblock
+                    targetZone: butcher
+                -   keyword: Commonlands
+                    targetZone: commonlands
+                # These interfere with the normal stone, which I personally prefer for going to HCEF. If you are doing LDoN stuff, you may wish to uncomment this.
+                #-   keyword: Everfrost
+                #    targetZone: everfrost
+                -   keyword: North Ro
+                    targetZone: northro
+                -   keyword: South Ro
+                    targetZone: southro
+                -   keyword: Nedaria's Landing
+                    targetZone: nedaria
