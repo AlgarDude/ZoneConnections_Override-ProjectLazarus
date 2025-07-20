@@ -1,6 +1,6 @@
 # Project Lazarus specific overrides for MQ2EasyFind
 # Authors: Algar(github.com/AlgarDude) and various unidentified contributors
-# Version: 20250712 (Initial Public Release)
+# Version: 20250720
 # License: Apache 2.0
 # This file was original released as a resource on redguides.com!
 FindLocations:
@@ -24,6 +24,14 @@ FindLocations:
                     targetZone: poknowledge
                 -   keyword: Temple of Marr
                     targetZone: freeporttemple
+    erudsxing:
+        -   type: Translocator
+            name: '#Translocator Jempar'
+            destinations:
+            -   keyword: travel to Qeynos
+                targetZone: qeynos
+            -   keyword: travel to Erudin
+                targetZone: erudin
     freeporttemple:
         -   type: Translocator
             name: Klonopin
@@ -230,6 +238,10 @@ FindLocations:
                     targetZone: warslikswood
                 -   keyword: westwastes
                     targetZone: westwastes
+    guildhall:
+        -   type: ZoneConnection
+            switch: OBJ_GUILD_DOOR
+            targetZone: poknowledge
     natimbi:
         -   type: ZoneConnection
             location: [1147.82, 1537.48, 531.95]
@@ -670,7 +682,7 @@ FindLocations:
             replace: false
         -   type: ZoneConnection
             switch: 138
-            targetZone: guildlobby
+            targetZone: guildhall
         -   type: ZoneConnection
             targetZone: feerrott
             name: 'The Feerrott'
@@ -723,7 +735,7 @@ FindLocations:
             expansion: Legacy of Ykesha
         -   type: ZoneConnection
             switch: 24
-            targetZone: steamfontmts
+            targetZone: steamfont
             replace: false
         -   type: ZoneConnection
             switch: 32
