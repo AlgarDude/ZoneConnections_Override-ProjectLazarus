@@ -1,6 +1,6 @@
 # Project Lazarus specific overrides for MQ2EasyFind
 # Authors: Algar(github.com/AlgarDude) and various unidentified contributors
-# Version: 20250720a
+# Version: 20250729
 # License: Apache 2.0
 # This file was original released as a resource on redguides.com!
 FindLocations:
@@ -76,6 +76,8 @@ FindLocations:
                     targetZone: dawnshroud
                 -   keyword: dranik
                     targetZone: dranik
+                -   keyword: draniksscar
+                    targetZone: draniksscar
                 -   keyword: dreadlands
                     targetZone: dreadlands
                 -   keyword: dulak
@@ -291,6 +293,8 @@ FindLocations:
                     targetZone: dawnshroud
                 -   keyword: dranik
                     targetZone: dranik
+                -   keyword: draniksscar
+                    targetZone: draniksscar
                 -   keyword: dreadlands
                     targetZone: dreadlands
                 -   keyword: dulak
@@ -513,6 +517,8 @@ FindLocations:
                     targetZone: dawnshroud
                 -   keyword: dranik
                     targetZone: dranik
+                -   keyword: draniksscar
+                    targetZone: draniksscar
                 -   keyword: dreadlands
                     targetZone: dreadlands
                 -   keyword: dulak
@@ -796,3 +802,57 @@ FindLocations:
                     targetZone: southro
                 -   keyword: Nedaria's Landing
                     targetZone: nedaria
+    potranquility:
+        -   type: ZoneConnection
+            location: [264, -2214, -934]
+            targetZone: pofire
+        -   type: ZoneConnection
+            location: [-152, -33, -618]
+            targetZone: potactics
+        -   type: ZoneConnection
+            switch: 80
+            location: [829, -687, -615]
+            targetZone: poair
+        -   type: ZoneConnection
+            location: [1903, -1110, -887]
+            switch: 11
+            targetZone: codecay
+        -   type: ZoneConnection
+            location: [-1538.79, -11.18, -921.24]
+            switch: 7
+            targetZone: poinnovation
+        -   type: ZoneConnection
+            location: [11.71, -610.53, -516.26]
+            switch: 37
+            targetZone: pojustice
+        -   type: ZoneConnection
+            location: [1718, -1447, -780]
+            targetZone: podisease
+        -   type: ZoneConnection
+            location: [-347.08, -1419.16, -933.27]
+            switch: 13
+            targetZone: pohealth
+            expansion: The Broken Mirror
+        -   type: ZoneConnection
+            location: [-650, 1186, -931]
+            switch: 15
+            targetZone: postorms
+        -   type: ZoneConnection
+            location: [-2172.27, 1193.77, -909.04]
+            switch: 18
+            targetZone: potimea
+        -   type: ZoneConnection
+            switch: 20
+            targetZone: povalor
+        -   type: ZoneConnection
+            switch: 83
+            targetZone: powater
+        -   type: ZoneConnection
+            switch: 21
+            targetZone: solrotower
+        -   type: ZoneConnection
+            location: [-697.95, 1785.66, -925.90]
+            targetZone: bothunder
+        -   type: ZoneConnection
+            location: [ -1335, 2192, -714]
+            targetZone: poeartha
