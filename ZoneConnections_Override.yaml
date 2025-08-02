@@ -1,6 +1,6 @@
 # Project Lazarus specific overrides for MQ2EasyFind
 # Authors: Algar(github.com/AlgarDude) and various unidentified contributors
-# Version: 20250729
+# Version: 20250802
 # License: Apache 2.0
 # This file was original released as a resource on redguides.com!
 FindLocations:
@@ -240,6 +240,10 @@ FindLocations:
                     targetZone: warslikswood
                 -   keyword: westwastes
                     targetZone: westwastes
+    freportw:
+        -   type: ZoneConnection
+            location: [250, -125, -9]
+            targetZone: freportn
     guildhall:
         -   type: ZoneConnection
             switch: OBJ_GUILD_DOOR
@@ -764,7 +768,7 @@ FindLocations:
             replace: false
         -   type: ZoneConnection
             switch: 25
-            targetZone: freeportwest
+            targetZone: freportw
         -   type: ZoneConnection
             switch: 28
             targetZone: qeynos2
