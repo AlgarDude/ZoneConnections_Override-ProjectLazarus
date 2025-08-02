@@ -1,6 +1,6 @@
 # Project Lazarus specific overrides for MQ2EasyFind
 # Authors: Algar(github.com/AlgarDude) and various unidentified contributors
-# Version: 20250802a
+# Version: 20250802b
 # License: Apache 2.0
 # This file was original released as a resource on redguides.com!
 FindLocations:
@@ -24,6 +24,14 @@ FindLocations:
                     targetZone: poknowledge
                 -   keyword: Temple of Marr
                     targetZone: freeporttemple
+    draniksscar:
+        -   type: Translocator
+            name: Elder Priest of Discord
+            keyword: go home
+            targetZone: poknowledge
+        -   type: ZoneConnection
+            location: [1388, 2040, 435]
+            targetZone: bloodfields
     erudsxing:
         -   type: Translocator
             name: '#Translocator Jempar'
@@ -863,3 +871,20 @@ FindLocations:
         -   type: ZoneConnection
             location: [ -1335, 2192, -714]
             targetZone: poeartha
+    thegrey:
+        -   type: ZoneConnection
+            location: [74.49, -14.25, -47.87]
+            targetZone: ssratemple
+        -   type: ZoneConnection
+            location: [570.62, -2259.63, 3.70]
+            targetZone: scarlet
+        -   type: ZoneConnection
+            location: [-2125, 370, -50]
+            targetZone: letalis
+    wallofslaughter:
+        -   type: ZoneConnection
+            location: [1979.28, -1702.54, 111.67]
+            targetZone: provinggrounds
+        -   type: ZoneConnection
+            location: [-2288, -1525, -68]
+            targetZone: causeway
