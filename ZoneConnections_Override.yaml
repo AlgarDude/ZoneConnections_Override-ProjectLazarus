@@ -1,6 +1,6 @@
 # Project Lazarus specific overrides for MQ2EasyFind
 # Authors: Algar(github.com/AlgarDude) and various unidentified contributors
-# Version: 20250802b
+# Version: 20250803
 # License: Apache 2.0
 # This file was original released as a resource on redguides.com!
 FindLocations:
@@ -32,6 +32,14 @@ FindLocations:
         -   type: ZoneConnection
             location: [1388, 2040, 435]
             targetZone: bloodfields
+    dreadlands:
+        -   type: ZoneConnection
+            location: [2325, -3485, 141]
+            targetZone: frontiermtns
+    erudnext:
+        -   type: ZoneConnection
+            location: [-1565, -184, -43]
+            targetZone: tox
     erudsxing:
         -   type: Translocator
             name: '#Translocator Jempar'
@@ -40,6 +48,10 @@ FindLocations:
                 targetZone: qeynos
             -   keyword: travel to Erudin
                 targetZone: erudin
+    felwithea:
+        -   type: ZoneConnection
+            location: [42, 220, 4.65]
+            targetZone: gfaydark
     freeporttemple:
         -   type: Translocator
             name: Klonopin
@@ -255,10 +267,43 @@ FindLocations:
         -   type: ZoneConnection
             location: [-425, -622, -23]
             targetZone: freporte
+    frontiermtns:
+        -   type: ZoneConnection
+            location: [-2335, 4280, -454.46]
+            targetZone: burningwood
+        -   type: ZoneConnection
+            location: [5982.80, 1441.43, 472.04]
+            targetZone: overthere
+            identifier: 1
+        -   type: ZoneConnection
+            location: [-3775, -3210, -346]
+            targetZone: dreadlands
+    gfaydark:
+        -   type: ZoneConnection
+            location: [2625, -55, 20]
+            targetZone: crushbone
+        -   type: ZoneConnection
+            location: [-1931, -2650, 25]
+            targetZone: felwithea
+    greatdivide:
+        -   type: ZoneConnection
+            location: [-1754.30, -5138.47, 194.99]
+            targetZone: eastwastes
+        -   type: ZoneConnection
+            switch: 14
+            targetZone: mischiefplane
     guildhall:
         -   type: ZoneConnection
             switch: OBJ_GUILD_DOOR
             targetZone: poknowledge
+    mistmoore:
+        -   type: ZoneConnection
+            location: [-360, 124, -177]
+            targetZone: lfaydark
+    misty:
+        -   type: ZoneConnection
+            location: [406, -2600, -6]
+            targetZone: rivervale
     natimbi:
         -   type: ZoneConnection
             location: [1147.82, 1537.48, 531.95]
@@ -479,6 +524,14 @@ FindLocations:
         #-   type: ZoneConnection
         #    switch: POKTELE500
         #    targetZone: poknowledge
+    northkarana:
+        -   type: ZoneConnection
+            location: [20, -3200, -33.59]
+            targetZone: eastkarana
+    oasis:
+        -   type: ZoneConnection
+            location: [-1925, 160, 8]
+            targetZone: sro
     poeartha:
         -   type: ZoneConnection
             location: [142, -1167, 71]
@@ -760,12 +813,12 @@ FindLocations:
             replace: false
         -   type: ZoneConnection
             switch: 32
-            targetZone: toxxulia
+            targetZone: tox
             identifier: 1
             replace: false
         -   type: ZoneConnection
             switch: 22
-            targetZone: toxxulia
+            targetZone: tox
             identifier: 2
             replace: false
         -   type: Translocator
@@ -791,7 +844,7 @@ FindLocations:
             targetZone: butcher
         -   type: ZoneConnection
             switch: 37
-            targetZone: mistythicket
+            targetZone: misty
         -   type: ZoneConnection
             switch: 139
             targetZone: bazaar
@@ -812,9 +865,9 @@ FindLocations:
                 #-   keyword: Everfrost
                 #    targetZone: everfrost
                 -   keyword: North Ro
-                    targetZone: northro
+                    targetZone: nro
                 -   keyword: South Ro
-                    targetZone: southro
+                    targetZone: sro
                 -   keyword: Nedaria's Landing
                     targetZone: nedaria
     potranquility:
@@ -871,6 +924,19 @@ FindLocations:
         -   type: ZoneConnection
             location: [ -1335, 2192, -714]
             targetZone: poeartha
+    provinggrounds:
+        -   type: ZoneConnection
+            location: [-5715, -145, -307]
+            switch: 15
+            targetZone: wallofslaughter
+    sro:
+        -   type: ZoneConnection
+            location: [1550, 168, 7]
+            targetZone: oasis
+    steamfont:
+        -   type: ZoneConnection
+            location: [-2070, 528, -106]
+            targetZone: akanon
     thegrey:
         -   type: ZoneConnection
             location: [74.49, -14.25, -47.87]
@@ -881,6 +947,10 @@ FindLocations:
         -   type: ZoneConnection
             location: [-2125, 370, -50]
             targetZone: letalis
+    tox:
+        -   type: ZoneConnection
+            location: [2570, 297, -44]
+            targetZone: erudnext
     wallofslaughter:
         -   type: ZoneConnection
             location: [1979.28, -1702.54, 111.67]
