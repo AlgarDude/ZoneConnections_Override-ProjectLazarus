@@ -1,6 +1,6 @@
 # Project Lazarus specific overrides for MQ2EasyFind
 # Authors: Algar(github.com/AlgarDude) and various unidentified contributors
-# Version: 20250803
+# Version: 20250803a
 # License: Apache 2.0
 # This file was original released as a resource on redguides.com!
 FindLocations:
@@ -929,6 +929,15 @@ FindLocations:
             location: [-5715, -145, -307]
             switch: 15
             targetZone: wallofslaughter
+        -   type: ZoneConnection
+            location: [-2432.16, -850.83, -305.50]
+            switch: 14
+            targetZone: riftseekers
+    riftseekers:
+        -   type: ZoneConnection
+            location: [87, 0, -235]
+            switch: 2
+            targetZone: provinggrounds
     sro:
         -   type: ZoneConnection
             location: [1550, 168, 7]
