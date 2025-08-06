@@ -1,6 +1,6 @@
 # Project Lazarus specific overrides for MQ2EasyFind
 # Authors: Algar(github.com/AlgarDude) and various unidentified contributors
-# Version: 20250803a
+# Version: 20250806
 # License: Apache 2.0
 # This file was original released as a resource on redguides.com!
 FindLocations:
@@ -24,6 +24,10 @@ FindLocations:
                     targetZone: poknowledge
                 -   keyword: Temple of Marr
                     targetZone: freeporttemple
+    commons:
+        -   type: ZoneConnection
+            location: [880, 4230, -47]
+            targetZone: kithicor
     draniksscar:
         -   type: Translocator
             name: Elder Priest of Discord
@@ -56,16 +60,12 @@ FindLocations:
         -   type: Translocator
             name: Klonopin
             destinations:
-                -   keyword: codecay
-                    targetZone: codecay
-                -   keyword: pofire
-                    targetZone: pofire
-                -   keyword: poinnovation
-                    targetZone: poinnovation
                 -   keyword: abysmal
                     targetZone: abysmal
                 -   keyword: acrylia
                     targetZone: acrylia
+                -   keyword: arena
+                    targetZone: arena    
                 -   keyword: barindu
                     targetZone: barindu
                 -   keyword: befallen
@@ -86,6 +86,10 @@ FindLocations:
                     targetZone: citymist
                 -   keyword: cobaltscar
                     targetZone: cobaltscar
+                -   keyword: codecay
+                    targetZone: codecay
+                -   keyword: commons
+                    targetZone: commons
                 -   keyword: crushbone
                     targetZone: crushbone
                 -   keyword: crystal
@@ -110,6 +114,8 @@ FindLocations:
                     targetZone: erudnext
                 -   keyword: ferubi
                     targetZone: ferubi
+                -   keyword: fieldofbone
+                    targetZone: fieldofbone
                 -   keyword: freeporttemple
                     targetZone: freeporttemple
                 -   keyword: frozenshadow
@@ -164,6 +170,8 @@ FindLocations:
                     targetZone: necropolis
                 -   keyword: northkarana
                     targetZone: northkarana
+                -   keyword: nro
+                    targetZone: nro
                 -   keyword: nurga
                     targetZone: nurga
                 -   keyword: oot
@@ -182,6 +190,10 @@ FindLocations:
                     targetZone: poeartha
                 -   keyword: poearthb
                     targetZone: poearthb
+                -   keyword: pofire
+                    targetZone: pofire
+                -   keyword: poinnovation
+                    targetZone: poinnovation
                 -   keyword: pojustice
                     targetZone: pojustice
                 -   keyword: poknowledge
@@ -226,6 +238,8 @@ FindLocations:
                     targetZone: soldungc
                 -   keyword: solrotower
                     targetZone: solrotower
+                -   keyword: sro
+                    targetZone: sro
                 -   keyword: ssratemple
                     targetZone: ssratemple
                 -   keyword: stonebrunt
@@ -296,6 +310,10 @@ FindLocations:
         -   type: ZoneConnection
             switch: OBJ_GUILD_DOOR
             targetZone: poknowledge
+    kithicor:
+        -   type: ZoneConnection
+            location: [1480, -1088, -47]
+            targetZone: commons
     mistmoore:
         -   type: ZoneConnection
             location: [-360, 124, -177]
@@ -313,16 +331,12 @@ FindLocations:
         -   type: Translocator
             name: Valium
             destinations:
-                -   keyword: codecay
-                    targetZone: codecay
-                -   keyword: pofire
-                    targetZone: pofire
-                -   keyword: poinnovation
-                    targetZone: poinnovation
                 -   keyword: abysmal
                     targetZone: abysmal
                 -   keyword: acrylia
                     targetZone: acrylia
+                -   keyword: arena
+                    targetZone: arena    
                 -   keyword: barindu
                     targetZone: barindu
                 -   keyword: befallen
@@ -343,6 +357,10 @@ FindLocations:
                     targetZone: citymist
                 -   keyword: cobaltscar
                     targetZone: cobaltscar
+                -   keyword: codecay
+                    targetZone: codecay
+                -   keyword: commons
+                    targetZone: commons
                 -   keyword: crushbone
                     targetZone: crushbone
                 -   keyword: crystal
@@ -367,6 +385,8 @@ FindLocations:
                     targetZone: erudnext
                 -   keyword: ferubi
                     targetZone: ferubi
+                -   keyword: fieldofbone
+                    targetZone: fieldofbone
                 -   keyword: freeporttemple
                     targetZone: freeporttemple
                 -   keyword: frozenshadow
@@ -421,6 +441,8 @@ FindLocations:
                     targetZone: necropolis
                 -   keyword: northkarana
                     targetZone: northkarana
+                -   keyword: nro
+                    targetZone: nro
                 -   keyword: nurga
                     targetZone: nurga
                 -   keyword: oot
@@ -439,6 +461,10 @@ FindLocations:
                     targetZone: poeartha
                 -   keyword: poearthb
                     targetZone: poearthb
+                -   keyword: pofire
+                    targetZone: pofire
+                -   keyword: poinnovation
+                    targetZone: poinnovation
                 -   keyword: pojustice
                     targetZone: pojustice
                 -   keyword: poknowledge
@@ -483,6 +509,8 @@ FindLocations:
                     targetZone: soldungc
                 -   keyword: solrotower
                     targetZone: solrotower
+                -   keyword: sro
+                    targetZone: sro
                 -   keyword: ssratemple
                     targetZone: ssratemple
                 -   keyword: stonebrunt
@@ -545,16 +573,12 @@ FindLocations:
         -   type: Translocator
             name: Valium
             destinations:
-                -   keyword: codecay
-                    targetZone: codecay
-                -   keyword: pofire
-                    targetZone: pofire
-                -   keyword: poinnovation
-                    targetZone: poinnovation
                 -   keyword: abysmal
                     targetZone: abysmal
                 -   keyword: acrylia
                     targetZone: acrylia
+                -   keyword: arena
+                    targetZone: arena    
                 -   keyword: barindu
                     targetZone: barindu
                 -   keyword: befallen
@@ -575,6 +599,10 @@ FindLocations:
                     targetZone: citymist
                 -   keyword: cobaltscar
                     targetZone: cobaltscar
+                -   keyword: codecay
+                    targetZone: codecay
+                -   keyword: commons
+                    targetZone: commons
                 -   keyword: crushbone
                     targetZone: crushbone
                 -   keyword: crystal
@@ -599,6 +627,8 @@ FindLocations:
                     targetZone: erudnext
                 -   keyword: ferubi
                     targetZone: ferubi
+                -   keyword: fieldofbone
+                    targetZone: fieldofbone
                 -   keyword: freeporttemple
                     targetZone: freeporttemple
                 -   keyword: frozenshadow
@@ -653,6 +683,8 @@ FindLocations:
                     targetZone: necropolis
                 -   keyword: northkarana
                     targetZone: northkarana
+                -   keyword: nro
+                    targetZone: nro
                 -   keyword: nurga
                     targetZone: nurga
                 -   keyword: oot
@@ -671,8 +703,14 @@ FindLocations:
                     targetZone: poeartha
                 -   keyword: poearthb
                     targetZone: poearthb
+                -   keyword: pofire
+                    targetZone: pofire
+                -   keyword: poinnovation
+                    targetZone: poinnovation
                 -   keyword: pojustice
                     targetZone: pojustice
+                -   keyword: poknowledge
+                    targetZone: poknowledge
                 -   keyword: ponightmare
                     targetZone: ponightmare
                 -   keyword: postorms
@@ -713,6 +751,8 @@ FindLocations:
                     targetZone: soldungc
                 -   keyword: solrotower
                     targetZone: solrotower
+                -   keyword: sro
+                    targetZone: sro
                 -   keyword: ssratemple
                     targetZone: ssratemple
                 -   keyword: stonebrunt
@@ -860,7 +900,7 @@ FindLocations:
                 -   keyword: Butcherblock
                     targetZone: butcher
                 -   keyword: Commonlands
-                    targetZone: commonlands
+                    targetZone: commons
                 # These interfere with the normal stone, which I personally prefer for going to HCEF. If you are doing LDoN stuff, you may wish to uncomment this.
                 #-   keyword: Everfrost
                 #    targetZone: everfrost
