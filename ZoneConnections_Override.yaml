@@ -1,6 +1,6 @@
 # Project Lazarus specific overrides for MQ2EasyFind
 # Authors: Algar(github.com/AlgarDude) and various unidentified contributors
-# Version: 20250806
+# Version: 20250807
 # License: Apache 2.0
 # This file was original released as a resource on redguides.com!
 FindLocations:
@@ -327,6 +327,17 @@ FindLocations:
             location: [1147.82, 1537.48, 531.95]
             targetZone: kodtaz
             switch: 1
+        -   type: Translocator
+            name: Magus Releua
+            destinations:
+                -   keyword: Abysmal Sea
+                    targetZone: abysmal
+                -   keyword: Nedaria
+                    targetZone: nedaria
+        -   type: Translocator
+            name: '#Madronoa'
+            keyword: wish to travel
+            targetZone: qvic
     nexus:
         -   type: Translocator
             name: Valium
@@ -1003,6 +1014,7 @@ FindLocations:
     wallofslaughter:
         -   type: ZoneConnection
             location: [1979.28, -1702.54, 111.67]
+            switch: 2
             targetZone: provinggrounds
         -   type: ZoneConnection
             location: [-2288, -1525, -68]
