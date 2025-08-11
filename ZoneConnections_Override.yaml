@@ -1,6 +1,7 @@
 # Project Lazarus specific overrides for MQ2EasyFind
-# Authors: Algar(github.com/AlgarDude) and various unidentified contributors
-# Version: 20250807
+# Authors: Algar(github.com/AlgarDude)
+# Contributors: Leo@redguides, many others who have not been identified. Thank you!
+# Version: 20250811
 # License: Apache 2.0
 # This file was original released as a resource on redguides.com!
 FindLocations:
@@ -310,10 +311,21 @@ FindLocations:
         -   type: ZoneConnection
             switch: OBJ_GUILD_DOOR
             targetZone: poknowledge
+    innothule:
+        -   type: ZoneConnection
+            location: [2600.05, 1125.86, -25.03]
+            targetZone: sro
+        -   type: ZoneConnection
+            location: [-1112.79, 1929.67, -12.00]
+            targetZone: feerrott
     kithicor:
         -   type: ZoneConnection
             location: [1480, -1088, -47]
             targetZone: commons
+    lakerathe:
+        -   type: ZoneConnection
+            location: [4414, 1166, 0]
+            targetZone: sro
     mistmoore:
         -   type: ZoneConnection
             location: [-360, 124, -177]
@@ -322,6 +334,10 @@ FindLocations:
         -   type: ZoneConnection
             location: [406, -2600, -6]
             targetZone: rivervale
+        -   type: ZoneConnection
+            location: [-554.63, -1254.19, 10.02]
+            targetZone: poknowledge
+            switch: 44
     natimbi:
         -   type: ZoneConnection
             location: [1147.82, 1537.48, 531.95]
@@ -571,6 +587,10 @@ FindLocations:
         -   type: ZoneConnection
             location: [-1925, 160, 8]
             targetZone: sro
+    paw:
+        -   type: ZoneConnection
+            location: [-135, 71, 5]
+            targetZone: southkarana
     poeartha:
         -   type: ZoneConnection
             location: [142, -1167, 71]
@@ -984,6 +1004,11 @@ FindLocations:
             location: [-2432.16, -850.83, -305.50]
             switch: 14
             targetZone: riftseekers
+    qeynos2:
+        -   type: ZoneConnection
+            location: [199.69, 485.06, 3.75]
+            switch: 77
+            targetZone: poknowledge
     riftseekers:
         -   type: ZoneConnection
             location: [87, 0, -235]
