@@ -1,7 +1,7 @@
 # Project Lazarus specific overrides for MQ2EasyFind
 # Authors: Algar(github.com/AlgarDude)
-# Contributors: Leo@redguides, many others who have not been identified. Thank you!
-# Version: 20250811
+# Contributors: Leo@redguides, Naturesong@redguides, many others who have not been identified. Thank you!
+# Version: 20250813
 # License: Apache 2.0
 # This file was original released as a resource on redguides.com!
 FindLocations:
@@ -1009,6 +1009,13 @@ FindLocations:
             location: [199.69, 485.06, 3.75]
             switch: 77
             targetZone: poknowledge
+    qvic:
+        -   type: ZoneConnection
+            location: [766, -2570, -649]
+            targetZone: kodtaz
+        -   type: ZoneConnection
+            switch: 2
+            targetZone: txevu
     riftseekers:
         -   type: ZoneConnection
             location: [87, 0, -235]
