@@ -1016,6 +1016,13 @@ FindLocations:
         -   type: ZoneConnection
             switch: 2
             targetZone: txevu
+    qrg:
+        -   type: ZoneConnection
+            targetZone: jaggedpine
+            switch: 3
+        -   type: ZoneConnection
+            location: [-620, 116, 5]
+            targetZone: qeytoqrg
     riftseekers:
         -   type: ZoneConnection
             location: [87, 0, -235]
