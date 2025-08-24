@@ -25,6 +25,17 @@ FindLocations:
                     targetZone: poknowledge
                 -   keyword: Temple of Marr
                     targetZone: freeporttemple
+    burningwood:
+        -   type: ZoneConnection
+            location: [-5070, -788, 201]
+            targetZone: dreadlands
+        -   type: ZoneConnection
+            location: [7110, -4148, -231.24]
+            targetZone: chardok
+    chardok:
+        -   type: ZoneConnection
+            location: [150, 862, 107]
+            targetZone: burningwood
     commons:
         -   type: ZoneConnection
             location: [880, 4230, -47]
@@ -324,8 +335,8 @@ FindLocations:
             targetZone: commons
     lakerathe:
         -   type: ZoneConnection
-            location: [4414, 1166, 0]
-            targetZone: sro
+            location: [4390, 1151, 4.64]
+            targetZone: southkarana
     mistmoore:
         -   type: ZoneConnection
             location: [-360, 124, -177]
@@ -818,6 +829,17 @@ FindLocations:
                     targetZone: warslikswood
                 -   keyword: westwastes
                     targetZone: westwastes
+        -   type: Translocator
+            name: Mavis
+            destinations:
+                -   keyword: Fear
+                    targetZone: fearplane
+                -   keyword: Hate-A
+                    targetZone: hateplane
+                -   keyword: Hate-B
+                    targetZone: hateplaneb    
+                -   keyword: Sky
+                    targetZone: airplane
         -   type: ZoneConnection
             switch: 23
             targetZone: overthere
@@ -1028,6 +1050,25 @@ FindLocations:
             location: [87, 0, -235]
             switch: 2
             targetZone: provinggrounds
+    southkarana:
+        -   type: ZoneConnection
+            location: [-8560, 1160, 5.57]
+            targetZone: lakerathe
+            script: |
+                mq.cmd('/face fast heading 180')
+                mq.delay(100)
+                mq.cmd('/keypress forward hold')
+                mq.delay(1000)
+                mq.cmd('/keypress forward')
+        -   type: ZoneConnection
+            location: [2900, 899.79, -32.34]
+            targetZone: northkarana
+            script: |
+                mq.cmd('/face fast heading 0')
+                mq.delay(100)
+                mq.cmd('/keypress forward hold')
+                mq.delay(1000)
+                mq.cmd('/keypress forward')
     sro:
         -   type: ZoneConnection
             location: [1550, 168, 7]
