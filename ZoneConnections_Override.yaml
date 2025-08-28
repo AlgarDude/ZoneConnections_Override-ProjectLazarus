@@ -1,7 +1,7 @@
 # Project Lazarus specific overrides for MQ2EasyFind
 # Authors: Algar(github.com/AlgarDude)
 # Contributors: Leo@redguides, Naturesong@redguides, many others who have not been identified. Thank you!
-# Version: 20250813
+# Version: 20250828
 # License: Apache 2.0
 # This file was original released as a resource on redguides.com!
 FindLocations:
@@ -192,8 +192,8 @@ FindLocations:
                     targetZone: paludal
                 -   keyword: paw
                     targetZone: paw
-                -   keyword: permaforst
-                    targetZone: permaforst
+                -   keyword: permafrost
+                    targetZone: permafrost
                 -   keyword: poair
                     targetZone: poair
                 -   keyword: podisease
@@ -489,8 +489,8 @@ FindLocations:
                     targetZone: paludal
                 -   keyword: paw
                     targetZone: paw
-                -   keyword: permaforst
-                    targetZone: permaforst
+                -   keyword: permafrost
+                    targetZone: permafrost
                 -   keyword: poair
                     targetZone: poair
                 -   keyword: podisease
@@ -735,8 +735,8 @@ FindLocations:
                     targetZone: paludal
                 -   keyword: paw
                     targetZone: paw
-                -   keyword: permaforst
-                    targetZone: permaforst
+                -   keyword: permafrost
+                    targetZone: permafrost
                 -   keyword: poair
                     targetZone: poair
                 -   keyword: podisease
