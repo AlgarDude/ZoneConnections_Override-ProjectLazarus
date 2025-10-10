@@ -1,7 +1,7 @@
 # Project Lazarus specific overrides for MQ2EasyFind
 # Authors: Algar(github.com/AlgarDude)
 # Contributors: Leo@redguides, Naturesong@redguides, many others who have not been identified. Thank you!
-# Version: 20250828
+# Version: 20251010
 # License: Apache 2.0
 # This file was original released as a resource on redguides.com!
 FindLocations:
@@ -321,6 +321,10 @@ FindLocations:
     guildhall:
         -   type: ZoneConnection
             switch: OBJ_GUILD_DOOR
+            targetZone: poknowledge
+    gunthak:
+        -   type: ZoneConnection
+            switch: POKTELE
             targetZone: poknowledge
     innothule:
         -   type: ZoneConnection
@@ -963,6 +967,11 @@ FindLocations:
                     targetZone: sro
                 -   keyword: Nedaria's Landing
                     targetZone: nedaria
+    potimea:
+        -   type: ZoneConnection
+            location: [-1884, -547, 15.61]
+            targetZone: potimeb
+            name: "Plane of Time B - Water Trial"
     potranquility:
         -   type: ZoneConnection
             location: [264, -2214, -934]
