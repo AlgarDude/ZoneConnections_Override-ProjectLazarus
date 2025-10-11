@@ -1100,6 +1100,11 @@ FindLocations:
         -   type: ZoneConnection
             location: [2570, 297, -44]
             targetZone: erudnext
+    wakening:
+        -   type: ZoneConnection
+            location: [455, -1060, -20]
+            switch: 4
+            targetZone: growthplane
     wallofslaughter:
         -   type: ZoneConnection
             location: [1979.28, -1702.54, 111.67]
