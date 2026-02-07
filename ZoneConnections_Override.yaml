@@ -1,7 +1,7 @@
 # Project Lazarus specific overrides for MQ2EasyFind
 # Authors: Algar(github.com/AlgarDude)
 # Contributors: Leo@redguides, Naturesong@redguides, many others who have not been identified. Thank you!
-# Version: 20251010
+# Version: 20260207
 # License: Apache 2.0
 # This file was original released as a resource on redguides.com!
 FindLocations:
@@ -318,6 +318,9 @@ FindLocations:
         -   type: ZoneConnection
             switch: 14
             targetZone: mischiefplane
+        -   type: ZoneConnection
+            location: [70, -142, 100]
+            targetZone: thurgadina
     guildhall:
         -   type: ZoneConnection
             switch: OBJ_GUILD_DOOR
