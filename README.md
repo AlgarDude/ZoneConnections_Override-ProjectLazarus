@@ -17,7 +17,12 @@ This resource is a mix of my personal efforts and some data that has been copied
 Place the downloaded file in your (MQInstall)\resources\EasyFind directory.  
 Issue an `/easyfind reload` command as needed.
 The override will automatically pull the updated connections the next time you log in.
-  
+
+Side Note: MQ2EasyFind must be configured to "Ignore Zone Connection Data" to function on emu servers (at least, every one that I have played on). Please check your plugin settings (/mqsettings > plugins > Easyfind is a convenient way to do so).
+
+<img width="384" height="130" alt="image" src="https://github.com/user-attachments/assets/09d0ea5f-4f25-44ac-8776-8ad507f0b06e" />
+
+
 ## FAQ:  
 How does all of this work?  
 Some time ago, some kind souls [added the ability to use an override file](https://github.com/brainiac/MQ2EasyFind/commit/a0cbedf67a08c3f4fe127e19438a880e91a70145) to allow custom connections without touching your default ZoneConnection file. 
