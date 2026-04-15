@@ -1,7 +1,7 @@
 # Project Lazarus specific overrides for MQ2EasyFind
 # Authors: Algar(github.com/AlgarDude)
 # Contributors: Leo@redguides, Naturesong@redguides, many others who have not been identified. Thank you!
-# Version: 20260216
+# Version: 20260415
 # License: Apache 2.0
 # This file was original released as a resource on redguides.com!
 FindLocations:
@@ -32,6 +32,43 @@ FindLocations:
         -   type: ZoneConnection
             location: [7110, -4148, -231.24]
             targetZone: chardok
+    butcher:
+        -   type: ZoneConnection
+            location: [3145, -180, 1.88]
+            targetZone: kaladima
+        -   type: Translocator
+            name: Magus Tira
+            keyword: Nedaria's Landing
+            targetZone: nedaria
+            expansion: Lost Dungeons of Norrath
+        -   type: Translocator
+            name: Magus Tira
+            destinations:
+                -   keyword: Commonlands
+                    targetZone: commonlands
+                -   keyword: Everfrost
+                    targetZone: everfrost
+                -   keyword: North Ro
+                    targetZone: northro
+                -   keyword: South Ro
+                    targetZone: southro
+            expansion: Lost Dungeons of Norrath
+            requiredAchievement: 500980300
+        -   type: Translocator
+            name: '#Translocator Fithop'
+            keyword: Travel to Ocean of Tears
+            targetZone: oot
+        -   type: Translocator
+            name: '#Translocator Gethia'
+            keyword: Travel to Timorous Deep
+            targetZone: timorous
+            expansion: Kunark
+        -   type: ZoneConnection
+            location: [-1318, -3095, 5]
+            targetZone: gfaydark
+        -   type: ZoneConnection
+            switch: POKTELE500
+            targetZone: poknowledge
     chardok:
         -   type: ZoneConnection
             location: [150, 862, 107]
@@ -306,11 +343,17 @@ FindLocations:
             targetZone: dreadlands
     gfaydark:
         -   type: ZoneConnection
+            location: [-1650, 2690, 5]
+            targetZone: butcher
+        -   type: ZoneConnection
             location: [2625, -55, 20]
             targetZone: crushbone
         -   type: ZoneConnection
             location: [-1931, -2650, 25]
             targetZone: felwithea
+        -   type: ZoneConnection
+            switch: POKTELE500
+            targetZone: poknowledge
     greatdivide:
         -   type: ZoneConnection
             location: [-1754.30, -5138.47, 194.99]
