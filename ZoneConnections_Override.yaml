@@ -25,6 +25,12 @@ FindLocations:
                     targetZone: poknowledge
                 -   keyword: Temple of Marr
                     targetZone: freeporttemple
+                -   keyword: Plane of Tranquility
+                    targetZone: potranquility
+    befallen:
+        -   type: ZoneConnection
+            location: [-61, 35, 0]
+            targetZone: commons
     burningwood:
         -   type: ZoneConnection
             location: [-5070, -788, 201]
@@ -38,22 +44,20 @@ FindLocations:
             targetZone: kaladima
         -   type: Translocator
             name: Magus Tira
-            keyword: Nedaria's Landing
-            targetZone: nedaria
-            expansion: Lost Dungeons of Norrath
-        -   type: Translocator
-            name: Magus Tira
             destinations:
                 -   keyword: Commonlands
-                    targetZone: commonlands
+                    targetZone: ecommons
                 -   keyword: Everfrost
                     targetZone: everfrost
                 -   keyword: North Ro
                     targetZone: northro
                 -   keyword: South Ro
                     targetZone: southro
+                -   keyword: Lesser Faydark
+                    targetZone: lfaydark
+                -   keyword: Nedaria's Landing
+                    targetZone: nedaria
             expansion: Lost Dungeons of Norrath
-            requiredAchievement: 500980300
         -   type: Translocator
             name: '#Translocator Fithop'
             keyword: Travel to Ocean of Tears
@@ -67,8 +71,21 @@ FindLocations:
             location: [-1318, -3095, 5]
             targetZone: gfaydark
         -   type: ZoneConnection
+            location: [-2950, -333, 0]
+            targetZone: cauldron
+        -   type: ZoneConnection
             switch: POKTELE500
             targetZone: poknowledge
+    cauldron:
+        -   type: ZoneConnection
+            location: [2869, 264, 472]
+            targetZone: butcher
+        -   type: ZoneConnection
+            location: [-1190, -1010, -331]
+            targetZone: kedge
+        -   type: ZoneConnection
+            location: [-2033, -626, 0]
+            targetZone: unrest
     chardok:
         -   type: ZoneConnection
             location: [150, 862, 107]
@@ -81,6 +98,19 @@ FindLocations:
         -   type: ZoneConnection
             location: [880, 4230, -47]
             targetZone: kithicor
+        -   type: ZoneConnection
+            location: [25, -1710, -77]
+            targetZone: ecommons
+        -   type: ZoneConnection
+            location: [-1167, 597, -42]
+            targetZone: befallen
+    dawnshroud:
+        -   type: ZoneConnection
+            location: [-1979, -877, 102]
+            targetZone: griegsend
+        -   type: ZoneConnection
+            location: [-711, -2150, 30]
+            targetZone: maiden
     draniksscar:
         -   type: Translocator
             name: Elder Priest of Discord
@@ -93,6 +123,42 @@ FindLocations:
         -   type: ZoneConnection
             location: [2325, -3485, 141]
             targetZone: frontiermtns
+    eastkarana:
+        -   type: ZoneConnection
+            location: [-3104.22, -8338.80, 689.91]
+            targetZone: highpasshold
+        -   type: ZoneConnection
+            location: [3635, -2019, 1.75]
+            targetZone: beholder
+        -   type: ZoneConnection
+            location: [9, 1213, -37]
+            targetZone: northkarana
+    ecommons:
+        -   type: ZoneConnection
+            location: [17, -1734, -54]
+            targetZone: freportw
+        -   type: ZoneConnection
+            location: [1552, 600, -181]
+            targetZone: nektulos
+        -   type: ZoneConnection
+            location: [-2467, -205, 0]
+            targetZone: nro
+        -   type: ZoneConnection
+            location: [25, 5172, -60]
+            targetZone: commons
+        -   type: Translocator
+            name: Magus Zeir
+            destinations:
+            -   keyword: Nedaria's Landing
+                targetZone: nedaria
+            -   keyword: Butcherblock
+                targetZone: butcher
+            -   keyword: Everfrost
+                targetZone: everfrost
+            -   keyword: North Ro
+                targetZone: northro
+            -   keyword: South Ro
+                targetZone: southro
     echo:
         -   type: ZoneConnection
             location: [-1030, -80, 0]
@@ -104,6 +170,11 @@ FindLocations:
         -   type: ZoneConnection
             location: [-1565, -184, -43]
             targetZone: tox
+        -   type: Translocator
+            name: '#Translocator Eniela'
+            destinations:
+            -   keyword: travel to Crossing
+                targetZone: erudsxing
     erudsxing:
         -   type: Translocator
             name: '#Translocator Jempar'
@@ -112,10 +183,65 @@ FindLocations:
                 targetZone: qeynos
             -   keyword: travel to Erudin
                 targetZone: erudin
+    everfrost:
+        -   type: ZoneConnection
+            location: [3776, 373, 0]
+            targetZone: halas
+        -   type: ZoneConnection
+            switch: POKTELE500
+            targetZone: poknowledge
+        -   type: Translocator
+            name: Magus Delin
+            keyword: Nedaria's Landing
+            targetZone: nedaria
+            expansion: Lost Dungeons of Norrath
+        -   type: Translocator
+            name: Magus Delin
+            destinations:
+            -   keyword: Nedaria's Landing
+                targetZone: nedaria
+            -   keyword: Butcherblock
+                targetZone: butcher
+            -   keyword: Commonlands
+                targetZone: ecommons
+            -   keyword: North Ro
+                targetZone: northro
+            -   keyword: South Ro
+                targetZone: southro
+            expansion: Lost Dungeons of Norrath
+        -   type: ZoneConnection
+            switch: MIRPORTAL700
+            targetZone: mira
+        -   type: ZoneConnection
+            switch: MIRPORTAL701
+            targetZone: mirj
+    feerrott:
+        -   type: ZoneConnection
+            location: [400, 3410, 6]
+            targetZone: rathemtn
+        -   type: ZoneConnection
+            location: [-1104, -3169, -9]
+            targetZone: innothuleb
+        -   type: ZoneConnection
+            targetZone: poknowledge
+            switch: POKTELE500
+        -   type: ZoneConnection
+            location: [-1474, -109, -18]
+            targetZone: cazicthule
+        -   type: ZoneConnection
+            location: [1687, 806, -202]
+            targetZone: oggok
     felwithea:
         -   type: ZoneConnection
             location: [42, 220, 4.65]
             targetZone: gfaydark
+        -   type: ZoneConnection
+            location: [372, -720, -12]
+            targetZone: felwitheb
+    felwitheb:
+        -   type: ZoneConnection
+            location: [219, -833, -12]
+            targetZone: felwithea
     freeporttemple:
         -   type: Translocator
             name: Klonopin
@@ -334,13 +460,66 @@ FindLocations:
                     targetZone: warslikswood
                 -   keyword: westwastes
                     targetZone: westwastes
+    freporte:
+        -   type: ZoneConnection
+            location: [118, -64, -27]
+            targetZone: freportw
+            identifier: 1
+        -   type: ZoneConnection
+            location: [450, -384, -27]
+            targetZone: freportw
+            identifier: 2
+        -   type: ZoneConnection
+            location: [-178, 343, -92]
+            targetZone: freportw
+            identifier: 3
+        -   type: ZoneConnection
+            location: [-1322, -670, -55]
+            targetZone: nro            
     freportw:
         -   type: ZoneConnection
             location: [250, -125, -9]
             targetZone: freportn
+            identifier: 1
+        -   type: ZoneConnection
+            location: [289, -700, -27]
+            targetZone: freportn
+            identifier: 2
+        -   type: ZoneConnection
+            location: [1589, -242, 0]
+            targetZone: freportn
+            identifier: 3
         -   type: ZoneConnection
             location: [-425, -622, -23]
             targetZone: freporte
+            identifier: 1
+        -   type: ZoneConnection
+            location: [-82, -904, -27]
+            targetZone: freporte
+            identifier: 2
+        -   type: ZoneConnection
+            location: [-708, -1625, -97]
+            targetZone: freporte
+            identifier: 3
+        -   type: ZoneConnection
+            location: [33, 824, -27]
+            targetZone: ecommons
+        -   type: ZoneConnection
+            switch: POKTELE500
+            targetZone: poknowledge
+    freportn:
+        -   type: ZoneConnection
+            location: [-474, 491, -13]
+            targetZone: freportw
+            identifier: 1
+        -   type: ZoneConnection
+            location: [-398, -82, -27]
+            targetZone: freportw
+            identifier: 2
+        -   type: ZoneConnection
+            location: [370, 710, -9]
+            targetZone: freportw
+            identifier: 3
     frontiermtns:
         -   type: ZoneConnection
             location: [-2335, 4280, -454.46]
@@ -352,6 +531,12 @@ FindLocations:
         -   type: ZoneConnection
             location: [-3775, -3210, -346]
             targetZone: dreadlands
+        -   type: ZoneConnection
+            location: [3269, 2965, 345]
+            targetZone: droga
+        -   type: ZoneConnection
+            location: [-2672, -535, -335]
+            targetZone: nurga
     gfaydark:
         -   type: ZoneConnection
             location: [-1650, 2690, 5]
@@ -383,6 +568,59 @@ FindLocations:
         -   type: ZoneConnection
             switch: POKTELE
             targetZone: poknowledge
+    halas:
+        -   type: ZoneConnection
+            location: [-738, -75, 0]
+            targetZone: everfrost
+    highkeep:
+        -   type: ZoneConnection
+            location: [-90, 110, 0]
+            targetZone: highpasshold
+    highpasshold:
+        -   type: ZoneConnection
+            location: [-146, -361, -25]
+            targetZone: highkeep
+            script: |
+                mq.cmd('/face fast heading 290')
+                mq.delay(1000)
+                mq.cmd('/keypress forward hold')
+                mq.delay(2000)
+                mq.cmd('/keypress forward')
+        -   type: ZoneConnection
+            location: [1327, 110, -205]
+            targetZone: eastkarana
+        -   type: ZoneConnection
+            location: [-1407, 171, -127]
+            targetZone: kithicor
+    hole:
+        -   type: ZoneConnection
+            location: [46.34, 359.41, -381.46]
+            targetZone: paineel
+            identifier: 2
+            script: |
+                mq.cmd('/face fast heading 90')
+                mq.delay(1000)
+                mq.cmd('/keypress forward hold')
+                mq.delay(2000)
+                mq.cmd('/keypress forward')
+        -   type: ZoneConnection
+            location: [46.34, 359.41, -381.46]
+            targetZone: erudnint
+            script: |
+                mq.cmd('/face fast heading 275')
+                mq.delay(1000)
+                mq.cmd('/keypress forward hold')
+                mq.delay(2000)
+                mq.cmd('/keypress forward')
+#        -   type: ZoneConnection
+#            location: [61.07, 344.77, -381.46]
+#            targetZone: neriakc
+#            script: |
+#                mq.cmd('/face fast heading 360')
+#                mq.delay(1000)
+#                mq.cmd('/keypress forward hold')
+#                mq.delay(2000)
+#                mq.cmd('/keypress forward')
     innothule:
         -   type: ZoneConnection
             location: [2600.05, 1125.86, -25.03]
@@ -394,10 +632,19 @@ FindLocations:
         -   type: ZoneConnection
             location: [1480, -1088, -47]
             targetZone: commons
+        -   type: ZoneConnection
+            location: [2028, 3825, 465]
+            targetZone: rivervale
     lakerathe:
         -   type: ZoneConnection
             location: [4390, 1151, 4.64]
             targetZone: southkarana
+        -   type: ZoneConnection
+            location: [2513, -2317, 1]
+            targetZone: rathemtn
+        -   type: ZoneConnection
+            location: [2342, 2719, 1]
+            targetZone: arena
     lavastorm:
         -   type: ZoneConnection
             location: [1113.98, 1082.89, -79.32]
@@ -409,6 +656,22 @@ FindLocations:
         -   type: ZoneConnection
             location: [1380, -1650, -105]
             targetZone: soltemple
+    lfaydark:
+        -   type: ZoneConnection
+            location: [2185, -1199, 0]
+            targetZone: gfaydark
+        -   type: ZoneConnection
+            location: [-1090, 3361, 0]
+            targetZone: mistmoore
+        -   type: ZoneConnection
+            location: [922, -2177, -4]
+            targetZone: steamfont
+        -   type: ZoneConnection
+            switch: 10
+            targetZone: mmcj
+        -   type: ZoneConnection
+            switch: 7
+            targetZone: mmca
     mistmoore:
         -   type: ZoneConnection
             location: [-360, 124, -177]
@@ -442,6 +705,53 @@ FindLocations:
             location: [-86, 1976, 5]
             switch: 59
             targetZone: westwastes
+    nektulos:
+        -   type: ZoneConnection
+            location: [3118, 313, -19]
+            targetZone: lavastorm
+        -   type: ZoneConnection
+            location: [2219, -1105, 0]
+            targetZone: neriaka
+        -   type: ZoneConnection
+            location: [-2680, -667, 0]
+            targetZone: ecommons
+        -   type: ZoneConnection
+            location: [738, -342, -5]
+            targetZone: poknowledge
+            switch: 78
+    neriaka:
+        -   type: ZoneConnection
+            location: [87, -374, -13]
+            targetZone: neriakb
+        -   type: ZoneConnection
+            location: [54, 154, 30]
+            targetZone: nektulos
+            script: |
+                mq.cmd('/face fast heading 360')
+                mq.delay(1000)
+                mq.cmd('/keypress forward hold')
+                mq.delay(1000)
+                mq.cmd('/keypress forward')
+    neriakb:
+        -   type: ZoneConnection
+            location: [86, -346, -13]
+            targetZone: neriaka
+        -   type: ZoneConnection
+            location: [207, -853, -39]
+            targetZone: neriakc
+    neriakc:
+        -   type: ZoneConnection
+            location: [201, -853, -39]
+            targetZone: neriakb
+            script: |
+                mq.cmd('/face fast heading 180')
+                mq.delay(1000)
+                mq.cmd('/keypress forward hold')
+                mq.delay(1000)
+                mq.cmd('/keypress forward')
+        -   type: ZoneConnection
+            location: [909, -1770, -70]
+            targetZone: neriakd
     nexus:
         -   type: Translocator
             name: Valium
@@ -663,6 +973,9 @@ FindLocations:
         -   type: ZoneConnection
             location: [-410, -90, -60]
             targetZone: bazaar
+        -   type: ZoneConnection
+            location: [453, 112, -32]
+            targetZone: netherbian
         #Choose whether you prefer to use this stone or valium. Stone puts you next to PoK > Nexus stone, Valium puts you next to PoK > PoT stone. Uncomment this to use the stone.
         #-   type: ZoneConnection
         #    switch: POKTELE500
@@ -671,7 +984,29 @@ FindLocations:
         -   type: ZoneConnection
             location: [20, -3200, -33.59]
             targetZone: eastkarana
+    nro:
+        -   type: ZoneConnection
+            location: [2619, 2973, 0]
+            targetZone: ecommons
+        -   type: ZoneConnection
+            location: [4180, 396, -28]
+            targetZone: freporte
+        -   type: Translocator
+            name: '#Translocator Ionie'
+            destinations:
+                -   keyword: travel to Iceclad
+                    targetZone: iceclad
+        -   type: ZoneConnection
+            location: [-1897, -745, 0]
+            targetZone: oasis
+    nurga:
+        -   type: ZoneConnection
+            location: [-2250, -1799, 0]
+            targetZone: frontiermtns
     oasis:
+        -   type: ZoneConnection
+            location: [2553, -767, -5]
+            targetZone: nro
         -   type: ZoneConnection
             location: [-1925, 160, 8]
             targetZone: sro
@@ -924,6 +1259,7 @@ FindLocations:
             switch: 34
             targetZone: everfrost
             replace: false
+            identifier: 1
         -   type: ZoneConnection
             switch: 138
             targetZone: guildhall
@@ -1019,7 +1355,7 @@ FindLocations:
             switch: 139
             targetZone: bazaar
         -   type: ZoneConnection
-            switch: 137
+            switch: 154
             targetZone: gunthak
         -   type: ZoneConnection
             targetZone: airplane
@@ -1030,10 +1366,10 @@ FindLocations:
                 -   keyword: Butcherblock
                     targetZone: butcher
                 -   keyword: Commonlands
-                    targetZone: commons
-                # These interfere with the normal stone, which I personally prefer for going to HCEF. If you are doing LDoN stuff, you may wish to uncomment this.
-                #-   keyword: Everfrost
-                #    targetZone: everfrost
+                    targetZone: ecommons
+                -   keyword: Everfrost
+                    targetZone: everfrost
+                    identifier: 2
                 -   keyword: North Ro
                     targetZone: nro
                 -   keyword: South Ro
@@ -1046,6 +1382,223 @@ FindLocations:
             targetZone: potimeb
             name: "Plane of Time B - Water Trial"
     potranquility:
+        -   type: Translocator
+            name: Klonopin
+            destinations:
+                -   keyword: abysmal
+                    targetZone: abysmal
+                -   keyword: acrylia
+                    targetZone: acrylia
+                -   keyword: arena
+                    targetZone: arena    
+                -   keyword: barindu
+                    targetZone: barindu
+                -   keyword: befallen
+                    targetZone: befallen
+                -   keyword: blackburrow
+                    targetZone: blackburrow
+                -   keyword: bothunder
+                    targetZone: bothunder
+                -   keyword: burningwood
+                    targetZone: burningwood
+                -   keyword: cazicthule
+                    targetZone: cazicthule
+                -   keyword: charasis
+                    targetZone: charasis
+                -   keyword: chardok
+                    targetZone: chardok
+                -   keyword: citymist
+                    targetZone: citymist
+                -   keyword: cobaltscar
+                    targetZone: cobaltscar
+                -   keyword: codecay
+                    targetZone: codecay
+                -   keyword: commons
+                    targetZone: commons
+                -   keyword: crushbone
+                    targetZone: crushbone
+                -   keyword: crystal
+                    targetZone: crystal
+                -   keyword: dalnir
+                    targetZone: dalnir
+                -   keyword: dawnshroud
+                    targetZone: dawnshroud
+                -   keyword: dranik
+                    targetZone: dranik
+                -   keyword: draniksscar
+                    targetZone: draniksscar
+                -   keyword: dreadlands
+                    targetZone: dreadlands
+                -   keyword: dulak
+                    targetZone: dulak
+                -   keyword: echo
+                    targetZone: echo
+                -   keyword: emeraldjungle
+                    targetZone: emeraldjungle
+                -   keyword: erudnext
+                    targetZone: erudnext
+                -   keyword: ferubi
+                    targetZone: ferubi
+                -   keyword: fieldofbone
+                    targetZone: fieldofbone
+                -   keyword: freeporttemple
+                    targetZone: freeporttemple
+                -   keyword: frozenshadow
+                    targetZone: frozenshadow
+                -   keyword: fungusgrove
+                    targetZone: fungusgrove
+                -   keyword: grimling
+                    targetZone: grimling
+                -   keyword: growthplane
+                    targetZone: growthplane
+                -   keyword: gukbottom
+                    targetZone: gukbottom
+                -   keyword: guktop
+                    targetZone: guktop
+                -   keyword: gunthak
+                    targetZone: gunthak
+                -   keyword: highkeep
+                    targetZone: highkeep
+                -   keyword: hohonora
+                    targetZone: hohonora
+                -   keyword: hole
+                    targetZone: hole
+                -   keyword: iceclad
+                    targetZone: iceclad
+                -   keyword: jaggedpine
+                    targetZone: jaggedpine
+                -   keyword: kael
+                    targetZone: kael
+                -   keyword: kaesora
+                    targetZone: kaesora
+                -   keyword: karnor
+                    targetZone: karnor
+                -   keyword: kurn
+                    targetZone: kurn
+                -   keyword: lakeofillomen
+                    targetZone: lakeofillomen
+                -   keyword: lavastorm
+                    targetZone: lavastorm
+                -   keyword: maiden
+                    targetZone: maiden
+                -   keyword: mischiefplane
+                    targetZone: mischiefplane
+                -   keyword: mistmoore
+                    targetZone: mistmoore
+                -   keyword: nadox
+                    targetZone: nadox
+                -   keyword: najena
+                    targetZone: najena
+                -   keyword: natimbi
+                    targetZone: natimbi
+                -   keyword: necropolis
+                    targetZone: necropolis
+                -   keyword: northkarana
+                    targetZone: northkarana
+                -   keyword: nro
+                    targetZone: nro
+                -   keyword: nurga
+                    targetZone: nurga
+                -   keyword: oot
+                    targetZone: oot
+                -   keyword: paludal
+                    targetZone: paludal
+                -   keyword: paw
+                    targetZone: paw
+                -   keyword: permafrost
+                    targetZone: permafrost
+                -   keyword: poair
+                    targetZone: poair
+                -   keyword: podisease
+                    targetZone: podisease
+                -   keyword: poeartha
+                    targetZone: poeartha
+                -   keyword: poearthb
+                    targetZone: poearthb
+                -   keyword: pofire
+                    targetZone: pofire
+                -   keyword: poinnovation
+                    targetZone: poinnovation
+                -   keyword: pojustice
+                    targetZone: pojustice
+                -   keyword: poknowledge
+                    targetZone: poknowledge
+                -   keyword: ponightmare
+                    targetZone: ponightmare
+                -   keyword: postorms
+                    targetZone: postorms
+                -   keyword: potactics
+                    targetZone: potactics
+                -   keyword: povalor
+                    targetZone: povalor
+                -   keyword: powater
+                    targetZone: powater
+                -   keyword: qeytoqrg
+                    targetZone: qeytoqrg
+                -   keyword: qinimi
+                    targetZone: qinimi
+                -   keyword: qrg
+                    targetZone: qrg
+                -   keyword: riwwi
+                    targetZone: riwwi
+                -   keyword: runnyeye
+                    targetZone: runnyeye
+                -   keyword: scarlet
+                    targetZone: scarlet
+                -   keyword: sebilis
+                    targetZone: sebilis
+                -   keyword: shadowhaven
+                    targetZone: shadowhaven
+                -   keyword: sharvahl
+                    targetZone: sharvahl
+                -   keyword: skyfire
+                    targetZone: skyfire
+                -   keyword: skyshrine
+                    targetZone: skyshrine
+                -   keyword: soldunga
+                    targetZone: soldunga
+                -   keyword: soldungb
+                    targetZone: soldungb
+                -   keyword: soldungc
+                    targetZone: soldungc
+                -   keyword: solrotower
+                    targetZone: solrotower
+                -   keyword: sro
+                    targetZone: sro
+                -   keyword: ssratemple
+                    targetZone: ssratemple
+                -   keyword: stonebrunt
+                    targetZone: stonebrunt
+                -   keyword: thegrey
+                    targetZone: thegrey
+                -   keyword: thurgadina
+                    targetZone: thurgadina
+                -   keyword: timorous
+                    targetZone: timorous
+                -   keyword: trakanon
+                    targetZone: trakanon
+                -   keyword: twilight
+                    targetZone: twilight
+                -   keyword: umbral
+                    targetZone: umbral
+                -   keyword: unrest
+                    targetZone: unrest
+                -   keyword: veksar
+                    targetZone: veksar
+                -   keyword: velketor
+                    targetZone: velketor
+                -   keyword: vexthal
+                    targetZone: vexthal
+                -   keyword: wakening
+                    targetZone: wakening
+                -   keyword: wallofslaughter
+                    targetZone: wallofslaughter
+                -   keyword: warrens
+                    targetZone: warrens
+                -   keyword: warslikswood
+                    targetZone: warslikswood
+                -   keyword: westwastes
+                    targetZone: westwastes
         -   type: ZoneConnection
             location: [264, -2214, -934]
             targetZone: pofire
@@ -1108,11 +1661,22 @@ FindLocations:
             location: [-2432.16, -850.83, -305.50]
             switch: 14
             targetZone: riftseekers
+    qeynos:
+        -   type: Translocator
+            name: '#Translocator Sedina'
+            keyword: Erud's Crossing
+            targetZone: erudsxing
+        -   type: ZoneConnection
+            location: [603, -78, 0]
+            targetZone: qeynos2
     qeynos2:
         -   type: ZoneConnection
             location: [199.69, 485.06, 3.75]
             switch: 77
             targetZone: poknowledge
+        -   type: ZoneConnection
+            location: [-39, 360, 0]
+            targetZone: qeynos
     qvic:
         -   type: ZoneConnection
             location: [766, -2570, -649]
@@ -1127,11 +1691,33 @@ FindLocations:
         -   type: ZoneConnection
             location: [-620, 116, 5]
             targetZone: qeytoqrg
+    rathemtn:
+        -   type: ZoneConnection
+            location: [3408.75, 3043.38, -3.87]
+            targetZone: lakerathe
+        -   type: ZoneConnection
+            targetZone: poknowledge
+            switch: 212
+        -   type: Translocator
+            name: Priest of Discord
+            keyword: wish to go to Discord
+            targetZone: draniksscar
+            expansion: Omens of War
+        -   type: ZoneConnection
+            location: [367, -3087, 0]
+            targetZone: feerrott
     riftseekers:
         -   type: ZoneConnection
             location: [87, 0, -235]
             switch: 2
             targetZone: provinggrounds
+    rivervale:
+        -   type: ZoneConnection
+            location: [-86.14, 100, 4.06]
+            targetZone: mistythicket
+        -   type: ZoneConnection
+            location: [-378, -281, 5]
+            targetZone: kithicor
     shadeweaver:
         -   type: ZoneConnection
             location: [-2068, -3610, -95]
@@ -1167,10 +1753,16 @@ FindLocations:
                 mq.cmd('/keypress forward hold')
                 mq.delay(1000)
                 mq.cmd('/keypress forward')
+        -   type: ZoneConnection
+            location: [-3151, 931, -12]
+            targetZone: paw
     sro:
         -   type: ZoneConnection
             location: [1550, 168, 7]
             targetZone: oasis
+        -   type: ZoneConnection
+            switch: RUJPORTAL701
+            targetZone: rujf
     steamfont:
         -   type: ZoneConnection
             location: [-2070, 528, -106]
