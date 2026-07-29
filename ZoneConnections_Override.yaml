@@ -1,7 +1,7 @@
 # Project Lazarus specific overrides for MQ2EasyFind
 # Authors: Algar(github.com/AlgarDude)
 # Contributors: Leo@redguides, Naturesong@redguides, many others who have not been identified. Thank you!
-# Version: 20260418
+# Version: 20260728
 # License: Apache 2.0
 # This file was original released as a resource on redguides.com!
 FindLocations:
@@ -89,6 +89,13 @@ FindLocations:
         -   type: ZoneConnection
             location: [2325, -3485, 141]
             targetZone: frontiermtns
+    echo:
+        -   type: ZoneConnection
+            location: [-1030, -80, 0]
+            targetZone: shadowhaven
+        -   type: ZoneConnection
+            location: [-1780, 1585, 127]
+            targetZone: thedeep
     erudnext:
         -   type: ZoneConnection
             location: [-1565, -184, -43]
@@ -1109,6 +1116,10 @@ FindLocations:
         -   type: ZoneConnection
             location: [-2068, -3610, -95]
             targetZone: sharvahl
+    shadowhaven:
+        -   type: ZoneConnection
+            location: [-1145, 1630, -75]
+            targetZone: echo
     southkarana:
         -   type: ZoneConnection
             location: [-8560, 1160, 5.57]
@@ -1136,6 +1147,10 @@ FindLocations:
         -   type: ZoneConnection
             location: [-2070, 528, -106]
             targetZone: akanon
+    thedeep:
+        -   type: ZoneConnection
+            location: [-385, -755, -61]
+            targetZone: echo
     thegrey:
         -   type: ZoneConnection
             location: [74.49, -14.25, -47.87]
