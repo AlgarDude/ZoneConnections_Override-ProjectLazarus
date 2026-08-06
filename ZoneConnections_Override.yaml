@@ -1,7 +1,7 @@
 # Project Lazarus specific overrides for MQ2EasyFind
 # Authors: Algar(github.com/AlgarDude)
 # Contributors: Leo@redguides, Naturesong@redguides, many others who have not been identified. Thank you!
-# Version: 20260728
+# Version: 20260729
 # License: Apache 2.0
 # This file was original released as a resource on redguides.com!
 FindLocations:
@@ -73,6 +73,10 @@ FindLocations:
         -   type: ZoneConnection
             location: [150, 862, 107]
             targetZone: burningwood
+    cobaltscar:
+        -   type: ZoneConnection
+            location: [1605, 1626, 66]
+            targetZone: sirens
     commons:
         -   type: ZoneConnection
             location: [880, 4230, -47]
@@ -394,6 +398,17 @@ FindLocations:
         -   type: ZoneConnection
             location: [4390, 1151, 4.64]
             targetZone: southkarana
+    lavastorm:
+        -   type: ZoneConnection
+            location: [1113.98, 1082.89, -79.32]
+            targetZone: soldunga
+        -   type: ZoneConnection
+            location: [3868.66, 132.38, -4.31]
+            targetZone: broodlands
+            expansion: Dragons of Norrath
+        -   type: ZoneConnection
+            location: [1380, -1650, -105]
+            targetZone: soltemple
     mistmoore:
         -   type: ZoneConnection
             location: [-360, 124, -177]
@@ -422,6 +437,11 @@ FindLocations:
             name: '#Madronoa'
             keyword: wish to travel
             targetZone: qvic
+    necropolis:
+        -   type: ZoneConnection
+            location: [-86, 1976, 5]
+            switch: 59
+            targetZone: westwastes
     nexus:
         -   type: Translocator
             name: Valium
@@ -1120,6 +1140,14 @@ FindLocations:
         -   type: ZoneConnection
             location: [-1145, 1630, -75]
             targetZone: echo
+    sirens:
+        -   type: ZoneConnection
+            location: [220, -91, 3]
+            targetZone: westwastes
+    soltemple:
+        -   type: ZoneConnection
+            location: [230, 56, 2]
+            targetZone: lavastorm
     southkarana:
         -   type: ZoneConnection
             location: [-8560, 1160, 5.57]
@@ -1178,3 +1206,8 @@ FindLocations:
         -   type: ZoneConnection
             location: [-2288, -1525, -68]
             targetZone: causeway
+    westwastes:
+        -   type: ZoneConnection
+            location: [-2860, 483, -196]
+            switch: 57
+            targetZone: necropolis
